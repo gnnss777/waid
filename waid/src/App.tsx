@@ -371,4 +371,26 @@ function App() {
         </section>
       )}
 
+      {/* Footer */}
+      <footer className="px-6 md:px-12 py-16 border-t border-[#E5E5E5]">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1D4E38] to-[#3AA862] flex items-center justify-center font-bold text-white">
+              O
+            </div>
+            <span className="font-semibold text-[#1A1A1A]">Organika</span>
+          </div>
+          <p className="text-[#6B6B6B] mb-4">Orçamento para Waid</p>
+          <p className="text-lg text-[#1A1A1A] mb-8 font-light italic">
+            "A Gente Acredita em Quem Continua"
+          </p>
+          <p className="text-xs text-[#8A8A8A]">
+            © 2024 — Produção cinematográfica com imagens de banco e animação glassmorphism
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
 export default App;
