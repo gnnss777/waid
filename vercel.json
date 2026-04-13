@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd waid && pnpm install && pnpm build",
+  "outputDirectory": "waid/dist",
+  "framework": "vite",
+  "installCommand": "cd waid && pnpm install",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/waid/dist/index.html" }
+  ]
+}
