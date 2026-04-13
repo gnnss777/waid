@@ -117,58 +117,42 @@ function App() {
 
       {/* Hero Section - Editorial */}
       <section className="px-6 md:px-12 py-16 md:py-24 max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left - Text Content */}
-          <div>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#1D4E38] mb-6 font-semibold">Orçamento Cinematográfico</p>
+        <div className="text-center">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#1D4E38] mb-6 font-semibold">Orçamento Cinematográfico</p>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
-              Orçamento
-              <br />
-              <span className="text-[#1D4E38]">para Waid</span>
-            </h1>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
+            Orçamento
+            <br />
+            <span className="text-[#1D4E38]">para Waid</span>
+          </h1>
 
-            <p className="text-2xl md:text-3xl text-[#3A3A3A] mb-6 font-light">Dois Filmes</p>
+          <p className="text-2xl md:text-3xl text-[#3A3A3A] mb-6 font-light">Um Filme + Cinco Shorts</p>
 
-            <p className="text-lg md:text-xl text-[#6B6B6B] leading-relaxed mb-4 italic">
-              "A Gente Acredita em Quem Continua"
-            </p>
+          <p className="text-lg md:text-xl text-[#6B6B6B] leading-relaxed mb-4 italic">
+            "A Gente Acredita em Quem Continua"
+          </p>
 
-            <p className="text-sm text-[#8A8A8A] mb-10">
-              Projeto de vídeo manifesto em duas versões
-            </p>
+          <p className="text-sm text-[#8A8A8A] mb-10">
+            Projeto de vídeo manifesto com versões para redes sociais
+          </p>
 
-            {/* Film Info Pills */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex items-center gap-3 px-5 py-3 bg-[#F8F8F8] rounded-full border border-[#E5E5E5]">
-                <div className="w-8 h-8 rounded-full bg-[#D4AF37]/10 flex items-center justify-center">
-                  <Camera className="w-4 h-4 text-[#D4AF37]" />
-                </div>
-                <div>
-                  <span className="text-xs text-[#8A8A8A] block">Filme 1</span>
-                  <span className="text-sm font-medium">2:00 minutos</span>
-                </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex items-center gap-3 px-5 py-3 bg-[#F8F8F8] rounded-full border border-[#E5E5E5]">
+              <div className="w-8 h-8 rounded-full bg-[#D4AF37]/10 flex items-center justify-center">
+                <Camera className="w-4 h-4 text-[#D4AF37]" />
               </div>
-              <div className="flex items-center gap-3 px-5 py-3 bg-[#F8F8F8] rounded-full border border-[#E5E5E5]">
-                <div className="w-8 h-8 rounded-full bg-[#9333EA]/10 flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-[#9333EA]" />
-                </div>
-                <div>
-                  <span className="text-xs text-[#8A8A8A] block">Filme 2</span>
-                  <span className="text-sm font-medium">0:45 segundos</span>
-                </div>
+              <div>
+                <span className="text-xs text-[#8A8A8A] block">Filme Principal</span>
+                <span className="text-sm font-medium">10:00 minutos</span>
               </div>
             </div>
-          </div>
-
-          {/* Right - Visual Element */}
-          <div className="hidden lg:flex justify-center items-center">
-            <div className="relative">
-              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-[#1D4E38]/5 to-[#3AA862]/5" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-40 h-40 rounded-full border-2 border-dashed border-[#1D4E38]/20 flex items-center justify-center">
-                  <span className="text-[#1D4E38]/40 text-xs font-medium">PLAY</span>
-                </div>
+            <div className="flex items-center gap-3 px-5 py-3 bg-[#F8F8F8] rounded-full border border-[#E5E5E5]">
+              <div className="w-8 h-8 rounded-full bg-[#9333EA]/10 flex items-center justify-center">
+                <Sparkles className="w-4 h-4 text-[#9333EA]" />
+              </div>
+              <div>
+                <span className="text-xs text-[#8A8A8A] block">Short Films</span>
+                <span className="text-sm font-medium">5x até 30seg</span>
               </div>
             </div>
           </div>
@@ -184,13 +168,12 @@ function App() {
       <section className="px-6 md:px-12 py-16 md:py-24 max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#3AA862] mb-4 font-semibold">Proposta</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-4">Você Recebe os Dois</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-4">Você Recebe Tudo</h2>
           <p className="text-base text-[#6B6B6B] max-w-2xl mx-auto">
-            Dois filmes distintos, cada um com sua identidade visual.
+            Um filme completo + 5 shorts otimizados para redes sociais.
           </p>
         </div>
 
-        {/* Film Cards - Clean & Elegant */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Film 1 */}
           <div
@@ -203,8 +186,8 @@ function App() {
                   <Camera className="w-7 h-7 text-[#D4AF37]" />
                 </div>
                 <div>
-                  <span className="text-xs tracking-[0.2em] uppercase text-[#D4AF37] font-bold block">Filme 1</span>
-                  <span className="text-sm text-[#6B6B6B] mt-1 block">Com Imagens Reais</span>
+                  <span className="text-xs tracking-[0.2em] uppercase text-[#D4AF37] font-bold block">Filme Principal</span>
+                  <span className="text-sm text-[#6B6B6B] mt-1 block">10 minutos</span>
                 </div>
               </div>
               <ChevronDown className={`w-5 h-5 text-[#8A8A8A] transition-transform ${expandedFilm === 'film1' ? 'rotate-180' : ''}`} />
@@ -217,14 +200,14 @@ function App() {
 
             <div className="flex items-center justify-between pt-6 border-t border-[#F0F0F0]">
               <div className="flex items-center gap-6 text-sm text-[#6B6B6B]">
-                <span>Duração: <strong className="text-[#1A1A1A]">2:00 min</strong></span>
+                <span>Duração: <strong className="text-[#1A1A1A]">10:00 min</strong></span>
                 <span>12 cenas</span>
               </div>
               <div className="text-xl font-bold text-[#D4AF37]">R$ 3.500</div>
             </div>
           </div>
 
-          {/* Film 2 */}
+          {/* Short Films */}
           <div
             className="bg-white rounded-2xl p-8 border border-[#E5E5E5] hover:border-[#9333EA]/50 hover:shadow-lg transition-all duration-300 cursor-pointer"
             onClick={() => setExpandedFilm(expandedFilm === 'film2' ? null : 'film2')}
@@ -235,24 +218,24 @@ function App() {
                   <Sparkles className="w-7 h-7 text-[#9333EA]" />
                 </div>
                 <div>
-                  <span className="text-xs tracking-[0.2em] uppercase text-[#9333EA] font-bold block">Filme 2</span>
-                  <span className="text-sm text-[#6B6B6B] mt-1 block">Motion Graphics</span>
+                  <span className="text-xs tracking-[0.2em] uppercase text-[#9333EA] font-bold block">Short Films</span>
+                  <span className="text-sm text-[#6B6B6B] mt-1 block">5 unidades</span>
                 </div>
               </div>
               <ChevronDown className={`w-5 h-5 text-[#8A8A8A] transition-transform ${expandedFilm === 'film2' ? 'rotate-180' : ''}`} />
             </div>
 
-            <h3 className="text-2xl font-bold mb-3 text-[#1A1A1A]">Filme de Animação</h3>
+            <h3 className="text-2xl font-bold mb-3 text-[#1A1A1A]">5 Shorts para Redes</h3>
             <p className="text-sm text-[#6B6B6B] leading-relaxed mb-6">
-              Motion graphics minimalista no estilo glassmorphism. Visual moderno com elementos únicos.
+              Versões de até 30 segundos cada, extraídas do filme principal. Otimizadas para Instagram, TikTok e YouTube Shorts.
             </p>
 
             <div className="flex items-center justify-between pt-6 border-t border-[#F0F0F0]">
               <div className="flex items-center gap-6 text-sm text-[#6B6B6B]">
-                <span>Duração: <strong className="text-[#1A1A1A]">0:45 seg</strong></span>
-                <span>Glassmorphism</span>
+                <span>Duração: <strong className="text-[#1A1A1A]">até 30seg</strong></span>
+                <span>5 unidades</span>
               </div>
-              <div className="text-xl font-bold text-[#9333EA]">R$ 2.500</div>
+              <div className="text-xl font-bold text-[#9333EA]">R$ 1.500</div>
             </div>
           </div>
         </div>
@@ -274,7 +257,7 @@ function App() {
             <div className="flex items-center gap-8 mb-10 text-sm">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#D4AF37]" />
-                <span className="text-[#1A1A1A] font-medium">2:00 minutos</span>
+                <span className="text-[#1A1A1A] font-medium">10:00 minutos</span>
               </div>
               <div className="flex items-center gap-2">
                 <Film className="w-4 h-4 text-[#D4AF37]" />
@@ -310,11 +293,11 @@ function App() {
               <div className="grid md:grid-cols-3 gap-4">
                 {[
                   'Imagens 4K do banco cinematográfico',
-                  '2 minutos de filme final',
+                  '10 minutos de filme final',
                   'Narração profissional',
                   'Trilha sonora licenciada',
                   'Color grading cinematográfico',
-                  'Cenas em IA apenas se necessário',
+                  'Entrega em 10-12 dias',
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-[#1D4E38]/10 flex items-center justify-center">
@@ -329,7 +312,7 @@ function App() {
         </section>
       )}
 
-      {/* Film 2 Details */}
+      {/* Film 2 Details - Short Films */}
       {expandedFilm === 'film2' && (
         <section className="px-6 md:px-12 py-12 max-w-6xl mx-auto">
           <div className="bg-white rounded-2xl p-8 md:p-12 border border-[#E5E5E5]">
@@ -337,87 +320,34 @@ function App() {
               <div className="w-10 h-10 bg-[#9333EA]/10 rounded-lg flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-[#9333EA]" />
               </div>
-              <h3 className="text-2xl font-bold text-[#9333EA]">Filme 2</h3>
+              <h3 className="text-2xl font-bold text-[#9333EA]">5 Short Films</h3>
               <span className="text-[#E5E5E5] text-2xl">—</span>
-              <span className="text-lg text-[#6B6B6B]">Motion Graphics</span>
+              <span className="text-lg text-[#6B6B6B]">Para Redes Sociais</span>
             </div>
 
             <div className="flex items-center gap-8 mb-8 text-sm">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#9333EA]" />
-                <span className="text-[#1A1A1A] font-medium">0:45 segundos</span>
+                <span className="text-[#1A1A1A] font-medium">até 30 segundos cada</span>
               </div>
               <div className="px-4 py-1.5 bg-[#9333EA]/10 rounded-full">
-                <span className="text-[#9333EA] font-bold">Glassmorphism Style</span>
+                <span className="text-[#9333EA] font-bold">5 unidades</span>
               </div>
               <div className="px-4 py-1.5 bg-[#1D4E38]/10 rounded-full">
-                <span className="text-[#1D4E38] font-bold">R$ 2.500</span>
+                <span className="text-[#1D4E38] font-bold">R$ 1.500</span>
               </div>
             </div>
 
-            {/* Video Player - Clean */}
-            <div className="flex justify-center mb-10">
-              <div className="bg-[#0A0A0A] rounded-2xl p-4 w-full max-w-lg">
-                <video
-                  className="w-full rounded-xl"
-                  controls
-                  preload="metadata"
-                >
-                  <source src="/video.mp4" type="video/mp4" />
-                  Seu navegador não suporta o elemento de vídeo.
-                </video>
-              </div>
-            </div>
-
-            {/* Visual Style */}
-            <div className="mb-10">
-              <h5 className="text-sm tracking-[0.2em] uppercase text-[#1A1A1A] font-bold mb-6">Estilo Visual</h5>
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="bg-[#FAFAFA] rounded-xl p-5 border border-[#F0F0F0]">
-                  <div className="w-8 h-8 bg-[#9333EA]/10 rounded-lg mb-3" />
-                  <span className="text-sm font-medium text-[#1A1A1A] block">Glassmorphism</span>
-                  <span className="text-xs text-[#8A8A8A]">Elementos translúcidos</span>
-                </div>
-                <div className="bg-[#FAFAFA] rounded-xl p-5 border border-[#F0F0F0]">
-                  <div className="w-8 h-8 bg-[#1D4E38]/10 rounded-lg mb-3" />
-                  <span className="text-sm font-medium text-[#1A1A1A] block">Movimento Fluido</span>
-                  <span className="text-xs text-[#8A8A8A]">Transições suaves</span>
-                </div>
-                <div className="bg-[#FAFAFA] rounded-xl p-5 border border-[#F0F0F0]">
-                  <div className="w-8 h-8 bg-gradient-to-br from-[#3AA862]/20 to-[#1D4E38]/20 rounded-lg mb-3" />
-                  <span className="text-sm font-medium text-[#1A1A1A] block">Paleta Clean</span>
-                  <span className="text-xs text-[#8A8A8A]">Tons pastéis</span>
-                </div>
-                <div className="bg-[#FAFAFA] rounded-xl p-5 border border-[#F0F0F0]">
-                  <div className="w-8 h-8 bg-[#D4AF37]/10 rounded-lg mb-3" />
-                  <span className="text-sm font-medium text-[#1A1A1A] block">Minimalista</span>
-                  <span className="text-xs text-[#8A8A8A]">Design clean</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Animations */}
-            <div className="mb-10">
-              <h5 className="text-sm tracking-[0.2em] uppercase text-[#1A1A1A] font-bold mb-6">Animações Incluídas</h5>
-              <div className="grid md:grid-cols-3 gap-4">
-                {animations.map((anim) => (
-                  <div key={anim.name} className="bg-[#FAFAFA] rounded-xl p-5 border border-[#F0F0F0]">
-                    <span className="text-sm font-medium text-[#1A1A1A] block mb-1">{anim.name}</span>
-                    <span className="text-xs text-[#8A8A8A]">{anim.desc}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* What's Included */}
-            <div className="bg-[#FAFAFA] rounded-xl p-8 border border-[#F0F0F0]">
+            <div className="bg-[#FAFAFA] rounded-xl p-8 border border-[#F0F0F0] mb-8">
               <h5 className="text-sm tracking-[0.2em] uppercase text-[#1A1A1A] font-bold mb-6">O que está incluído</h5>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  'Motion Design completo',
-                  'Arte e styleframes',
-                  '45 segundos final',
-                  'Música e narração',
+                  '5 shorts de até 30 segundos',
+                  'Extraídos do filme principal',
+                  'Otimizados para Instagram/TikTok/Shorts',
+                  'Formatos verticais e horizontais',
+                  'Trilha sonora licenciada',
+                  'Entrega junto com o filme principal',
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-[#1D4E38]/10 flex items-center justify-center">
@@ -428,129 +358,17 @@ function App() {
                 ))}
               </div>
             </div>
+
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+              {['Instagram', 'TikTok', 'YouTube Shorts', 'LinkedIn', 'Facebook'].map((platform) => (
+                <div key={platform} className="bg-[#FAFAFA] rounded-xl p-5 border border-[#F0F0F0] text-center">
+                  <span className="text-sm font-medium text-[#1A1A1A] block">{platform}</span>
+                  <span className="text-xs text-[#8A8A8A]">Otimizado</span>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       )}
-
-      {/* Project Summary */}
-      <section className="px-6 md:px-12 py-16 max-w-6xl mx-auto">
-        <div className="bg-white rounded-2xl p-10 md:p-14 border border-[#E5E5E5]">
-          <div className="text-center mb-12">
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#3AA862] mb-4 font-semibold">Resumo</p>
-            <h2 className="text-4xl font-bold text-[#1A1A1A] mb-3">Resumo do Projeto</h2>
-            <p className="text-lg text-[#1D4E38] font-medium">Dois Filmes, Uma História</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Film 1 */}
-            <div className="bg-[#FAFAFA] rounded-xl p-8 border border-[#F0F0F0]">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-[#D4AF37]/10 rounded-lg flex items-center justify-center">
-                  <Camera className="w-5 h-5 text-[#D4AF37]" />
-                </div>
-                <span className="text-sm tracking-[0.15em] uppercase text-[#D4AF37] font-bold">Filme 1</span>
-              </div>
-              <div className="text-3xl font-bold text-[#1A1A1A] mb-2">2 minutos</div>
-              <div className="text-2xl text-[#1D4E38] font-bold mb-6">R$ 3.500</div>
-              <ul className="space-y-3 text-sm text-[#6B6B6B]">
-                <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#1D4E38]" />
-                  <span>12 cenas com imagens reais</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#1D4E38]" />
-                  <span>Banco de imagens cinematográfico</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#1D4E38]" />
-                  <span>Narração profissional</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#1D4E38]" />
-                  <span>Color grading</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Film 2 */}
-            <div className="bg-[#FAFAFA] rounded-xl p-8 border border-[#F0F0F0]">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-[#9333EA]/10 rounded-lg flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-[#9333EA]" />
-                </div>
-                <span className="text-sm tracking-[0.15em] uppercase text-[#9333EA] font-bold">Filme 2</span>
-              </div>
-              <div className="text-3xl font-bold text-[#1A1A1A] mb-2">45 segundos</div>
-              <div className="text-2xl text-[#1D4E38] font-bold mb-6">R$ 2.500</div>
-              <ul className="space-y-3 text-sm text-[#6B6B6B]">
-                <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#1D4E38]" />
-                  <span>Motion design glassmorphism</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#1D4E38]" />
-                  <span>Elementos gráficos únicos</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#1D4E38]" />
-                  <span>Motion graphics fluidos</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#1D4E38]" />
-                  <span>Estilo minimalista clean</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Total */}
-            <div className="bg-gradient-to-br from-[#1D4E38] to-[#2D6B4A] rounded-xl p-8 text-white">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                  <Star className="w-5 h-5" />
-                </div>
-                <span className="text-sm tracking-[0.15em] uppercase font-bold">Investimento Total</span>
-              </div>
-              <div className="text-lg text-white/80 mb-1">Dois Filmes Completos</div>
-              <div className="text-4xl font-bold mb-6">R$ 6.000</div>
-              <div className="space-y-3 text-sm">
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-[#3AA862]" />
-                  <span>Entrega em 10-12 dias</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#3AA862]" />
-                  <span>Narração inclusa</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#3AA862]" />
-                  <span>Color grading</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer - Elegante */}
-      <footer className="px-6 md:px-12 py-16 border-t border-[#E5E5E5]">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1D4E38] to-[#3AA862] flex items-center justify-center font-bold text-white">
-              O
-            </div>
-            <span className="font-semibold text-[#1A1A1A]">Organika</span>
-          </div>
-          <p className="text-[#6B6B6B] mb-4">Orçamento para Waid</p>
-          <p className="text-lg text-[#1A1A1A] mb-8 font-light italic">
-            "A Gente Acredita em Quem Continua"
-          </p>
-          <p className="text-xs text-[#8A8A8A]">
-            © 2024 — Produção cinematográfica com imagens de banco e animação glassmorphism
-          </p>
-        </div>
-      </footer>
-    </div>
-  );
-}
 
 export default App;
