@@ -268,7 +268,7 @@ function App() {
                 <span>Duração: <strong className="text-[#1A1A1A]">até 30seg</strong></span>
                 <span>5 unidades</span>
               </div>
-              <div className="text-xl font-bold text-[#3AA862]">GRÁTIS</div>
+              <div className="text-xl font-bold text-[#3AA862]">EXTRA</div>
             </div>
           </div>
         </div>
