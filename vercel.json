@@ -1,6 +1,5 @@
 {
   "buildCommand": "cd waid && npm install && npm run build",
   "outputDirectory": "waid/dist",
-  "framework": "vite",
-  "installCommand": "cd waid && npm install"
+  "framework": "vite"
 }
