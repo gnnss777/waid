@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Play, Star, Clock, Camera, Sparkles, ChevronDown, Check, Film } from 'lucide-react';
 
 function App() {
-  const [expandedFilm, setExpandedFilm] = useState<'film1' | 'film2' | null>(null);
+  const [expandedFilm, setExpandedFilm] = useState<'film1' | 'film2' | 'film3' | null>(null);
 
   const scenes = [
     {
@@ -106,7 +106,7 @@ function App() {
             O
           </div>
           <div>
-            <span className="text-xl font-semibold tracking-tight">Organika</span>
+            <span className="text-xl font-semibold tracking-tight">WAID</span>
             <span className="block text-xs text-[#8A8A7A] mt-0.5">Produção Cinematográfica</span>
           </div>
         </div>
@@ -117,46 +117,42 @@ function App() {
 
       {/* Hero Section - Editorial */}
       <section className="px-6 md:px-12 py-16 md:py-24 max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left - Text Content */}
-          <div>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-[#1D4E38] mb-6 font-semibold">Orçamento Cinematográfico</p>
+        <div className="text-center">
+          <p className="text-[10px] tracking-[0.35em] uppercase text-[#1D4E38] mb-6 font-semibold">Orçamento Cinematográfico</p>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
-              Orçamento
-              <br />
-              <span className="text-[#1D4E38]">para Wand</span>
-            </h1>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
+            Orçamento
+            <br />
+            <span className="text-[#1D4E38]">para WAID</span>
+          </h1>
 
-            <p className="text-2xl md:text-3xl text-[#3A3A3A] mb-6 font-light">Dois Filmes</p>
+          <p className="text-2xl md:text-3xl text-[#3A3A3A] mb-6 font-light">Dois Filmes</p>
 
-            <p className="text-lg md:text-xl text-[#6B6B6B] leading-relaxed mb-4 italic">
-              "A Gente Acredita em Quem Continua"
-            </p>
+          <p className="text-lg md:text-xl text-[#6B6B6B] leading-relaxed mb-4 italic">
+            "A Gente Acredita em Quem Continua"
+          </p>
 
-            <p className="text-sm text-[#8A8A8A] mb-10">
-              Projeto de vídeo manifesto em duas versões
-            </p>
+          <p className="text-sm text-[#8A8A8A] mb-10">
+            Projeto de vídeo manifesto em duas versões
+          </p>
 
-            {/* Film Info Pills */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex items-center gap-3 px-5 py-3 bg-[#F8F8F8] rounded-full border border-[#E5E5E5]">
-                <div className="w-8 h-8 rounded-full bg-[#D4AF37]/10 flex items-center justify-center">
-                  <Camera className="w-4 h-4 text-[#D4AF37]" />
-                </div>
-                <div>
-                  <span className="text-xs text-[#8A8A8A] block">Filme 1</span>
-                  <span className="text-sm font-medium">2:00 minutos</span>
-                </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex items-center gap-3 px-5 py-3 bg-[#F8F8F8] rounded-full border border-[#E5E5E5]">
+              <div className="w-8 h-8 rounded-full bg-[#D4AF37]/10 flex items-center justify-center">
+                <Camera className="w-4 h-4 text-[#D4AF37]" />
               </div>
-              <div className="flex items-center gap-3 px-5 py-3 bg-[#F8F8F8] rounded-full border border-[#E5E5E5]">
-                <div className="w-8 h-8 rounded-full bg-[#9333EA]/10 flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-[#9333EA]" />
-                </div>
-                <div>
-                  <span className="text-xs text-[#8A8A8A] block">Filme 2</span>
-                  <span className="text-sm font-medium">0:45 segundos</span>
-                </div>
+              <div>
+                <span className="text-xs text-[#8A8A8A] block">Filme 1</span>
+                <span className="text-sm font-medium">2:00 minutos</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 px-5 py-3 bg-[#F8F8F8] rounded-full border border-[#E5E5E5]">
+              <div className="w-8 h-8 rounded-full bg-[#9333EA]/10 flex items-center justify-center">
+                <Sparkles className="w-4 h-4 text-[#9333EA]" />
+              </div>
+              <div>
+                <span className="text-xs text-[#8A8A8A] block">Filme 2</span>
+                <span className="text-sm font-medium">0:45 segundos</span>
               </div>
             </div>
           </div>
@@ -172,14 +168,14 @@ function App() {
       <section className="px-6 md:px-12 py-16 md:py-24 max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-[10px] tracking-[0.35em] uppercase text-[#3AA862] mb-4 font-semibold">Proposta</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-4">Você Recebe os Dois</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-4">Você Recebe os Três</h2>
           <p className="text-base text-[#6B6B6B] max-w-2xl mx-auto">
-            Dois filmes distintos, cada um com sua identidade visual.
+            Dois filmes distintos + 5 shorts extras para redes sociais.
           </p>
         </div>
 
         {/* Film Cards - Clean & Elegant */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Film 1 */}
           <div
             className="bg-white rounded-2xl p-8 border border-[#E5E5E5] hover:border-[#D4AF37]/50 hover:shadow-lg transition-all duration-300 cursor-pointer"
@@ -241,6 +237,38 @@ function App() {
                 <span>Glassmorphism</span>
               </div>
               <div className="text-xl font-bold text-[#9333EA]">R$ 2.500</div>
+            </div>
+          </div>
+
+          {/* Short Films - Extra */}
+          <div
+            className="bg-white rounded-2xl p-8 border border-[#E5E5E5] hover:border-[#3AA862]/50 hover:shadow-lg transition-all duration-300 cursor-pointer"
+            onClick={() => setExpandedFilm(expandedFilm === 'film3' ? null : 'film3')}
+          >
+            <div className="flex items-start justify-between mb-8">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 bg-[#3AA862]/10 rounded-xl flex items-center justify-center">
+                  <Film className="w-7 h-7 text-[#3AA862]" />
+                </div>
+                <div>
+                  <span className="text-xs tracking-[0.2em] uppercase text-[#3AA862] font-bold block">EXTRA</span>
+                  <span className="text-sm text-[#6B6B6B] mt-1 block">5 Short Films</span>
+                </div>
+              </div>
+              <ChevronDown className={`w-5 h-5 text-[#8A8A8A] transition-transform ${expandedFilm === 'film3' ? 'rotate-180' : ''}`} />
+            </div>
+
+            <h3 className="text-2xl font-bold mb-3 text-[#1A1A1A]">Shorts para Redes</h3>
+            <p className="text-sm text-[#6B6B6B] leading-relaxed mb-6">
+              5 vídeos de até 30 segundos cada, extraídos do filme principal. Otimizados para Instagram, TikTok e YouTube Shorts.
+            </p>
+
+            <div className="flex items-center justify-between pt-6 border-t border-[#F0F0F0]">
+              <div className="flex items-center gap-6 text-sm text-[#6B6B6B]">
+                <span>Duração: <strong className="text-[#1A1A1A]">até 30seg</strong></span>
+                <span>5 unidades</span>
+              </div>
+              <div className="text-xl font-bold text-[#3AA862]">GRÁTIS</div>
             </div>
           </div>
         </div>
@@ -526,9 +554,9 @@ function App() {
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1D4E38] to-[#3AA862] flex items-center justify-center font-bold text-white">
               O
             </div>
-            <span className="font-semibold text-[#1A1A1A]">Organika</span>
+            <span className="font-semibold text-[#1A1A1A]">WAID</span>
           </div>
-          <p className="text-[#6B6B6B] mb-4">Orçamento para Wand</p>
+          <p className="text-[#6B6B6B] mb-4">Orçamento para WAID</p>
           <p className="text-lg text-[#1A1A1A] mb-8 font-light italic">
             "A Gente Acredita em Quem Continua"
           </p>
